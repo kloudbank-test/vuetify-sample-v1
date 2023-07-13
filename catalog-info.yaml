@@ -1,7 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  annotations: {}
+  annotations:
+    backstage.io/kubernetes-id: vuetify-sample-v1
   name: "vuetify-sample-v1"
 spec:
   type: service
