@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations: {}
+  name: "vuetify-sample-v1"
+spec:
+  type: service
+  owner: "kloudbank-test"
+  lifecycle: experimental
