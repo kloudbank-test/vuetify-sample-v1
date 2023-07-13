@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: vuetify-sample-v1
+  labels:
+    backstage.io/kubernetes-id: vuetify-sample-v1
 spec:
   replicas: 1
   selector:
@@ -11,6 +13,7 @@ spec:
     metadata:
       labels:
         app: vuetify-sample-v1
+        backstage.io/kubernetes-id: vuetify-sample-v1
     spec:
       containers:
       - env:
@@ -53,6 +56,7 @@ metadata:
   name: vuetify-sample-v1
   labels:
     app: vuetify-sample-v1
+    backstage.io/kubernetes-id: vuetify-sample-v1
 spec:
   ports:
   - port: 3000
@@ -68,6 +72,8 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: nginx
     ingress.kubernetes.io/rewrite-target: /
+  labels:
+    backstage.io/kubernetes-id: vuetify-sample-v1
 spec:
   rules:
   - host: vuetify-sample-v1.nogada.kubepia.net

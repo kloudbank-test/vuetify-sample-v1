@@ -2,6 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   annotations:
+    github.com/project-slug: 'kloudbank-test/vuetify-sample-v1'
     backstage.io/kubernetes-id: vuetify-sample-v1
   name: "vuetify-sample-v1"
 spec:
